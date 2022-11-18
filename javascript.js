@@ -18,6 +18,35 @@ class persona {
     }
 }
 
+class perro {
+
+    constructor(nombre, edad, dueño){
+        this.nombre = nombre,
+        this.edad = edad,
+        this.dueño = dueño
+    }
+
+    getNombre(){
+        return this.nombre
+    }
+
+    setNombre(nombre){
+        this.nombre = nombre
+    }
+
+}
+
+let saludar = (nombre)=>{
+    console.log(`hola ${nombre}`)
+}
+
+let perro_1 = new perro("Illita", 2, "mama")
+console.log(perro_1.getNombre())
+
+
+let nombre = "Ternasco"
+perro_1.setNombre(nombre)
+
 
 // crear un objeto con la clase indicada
 
@@ -38,7 +67,7 @@ class alumno extends persona{
 }
 
 let Lucia = new alumno("2ºB", 8.4, "Lucia", "Martín", 18)
-console.log(Lucia)
+console.log(Lucia.getApellidos())
 
 
 
